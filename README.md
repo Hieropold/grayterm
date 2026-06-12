@@ -14,8 +14,17 @@ Self-contained CLI for viewing Graylog logs via REST API, written in Rust. Suita
 
 ## Installation
 
+### Via Cargo
 ```sh
 cargo install --path .
+```
+
+### Manual (Ubuntu/Linux)
+Build the release version and copy it to your local bin directory:
+```sh
+cargo build --release
+mkdir -p ~/.local/bin
+cp target/release/grayterm ~/.local/bin/
 ```
 
 ## Usage
